@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 11 10:32:12 2021
+# Process ID: 7276
+# Current directory: C:/Users/goktug/Desktop/CS_303_LABS/lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2672 C:\Users\goktug\Desktop\CS_303_LABS\lab1\lab1.xpr
+# Log file: C:/Users/goktug/Desktop/CS_303_LABS/lab1/vivado.log
+# Journal file: C:/Users/goktug/Desktop/CS_303_LABS/lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/goktug/Desktop/CS_303_LABS/lab1/lab1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/goktug/Desktop/CS 303 LABS/lab1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 842.242 ; gain = 99.418
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 11 11:01:19 2021...

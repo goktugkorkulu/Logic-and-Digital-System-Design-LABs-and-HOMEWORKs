@@ -1,0 +1,1337 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec  3 10:41:53 2021
+# Process ID: 6232
+# Current directory: C:/Users/goktu/Desktop/CS_303_LABS/lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7860 C:\Users\goktu\Desktop\CS_303_LABS\lab_3\lab_3.xpr
+# Log file: C:/Users/goktu/Desktop/CS_303_LABS/lab_3/vivado.log
+# Journal file: C:/Users/goktu/Desktop/CS_303_LABS/lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+close [ open C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v w ]
+add_files C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_source' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_source_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_source_behav xil_defaultlib.lab3_source xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.lab3_source
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab3_source_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/xsim.dir/lab3_source_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  3 11:21:43 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_source_behav -key {Behavioral:sim_1:Functional:lab3_source} -tclbatch {lab3_source.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_source.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_source_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 840.410 ; gain = 13.984
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_source' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_source_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_source_behav xil_defaultlib.lab3_source xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_source_behav -key {Behavioral:sim_1:Functional:lab3_source} -tclbatch {lab3_source.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_source.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_source_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_source' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_source_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_source_behav xil_defaultlib.lab3_source xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_source_behav -key {Behavioral:sim_1:Functional:lab3_source} -tclbatch {lab3_source.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_source.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_source_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port C on this module [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:38]
+ERROR: [VRFC 10-2063] Module <FullAdder> not found while processing module instance <FA0> [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port C on this module [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:38]
+ERROR: [VRFC 10-2063] Module <FullAdder> not found while processing module instance <FA0> [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+ERROR: [VRFC 10-91] C is not declared [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:141]
+ERROR: [VRFC 10-91] C is not declared [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:142]
+ERROR: [VRFC 10-91] C is not declared [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:146]
+ERROR: [VRFC 10-91] C is not declared [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:180]
+ERROR: [VRFC 10-91] C is not declared [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:181]
+ERROR: [VRFC 10-91] C is not declared [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:185]
+ERROR: [VRFC 10-2787] module lab3_sim ignored due to previous errors [C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.lab3_source
+Compiling module xil_defaultlib.lab3_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab3_sim_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim/xsim.dir/lab3_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  3 11:31:42 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is wrong!  3521 !=  3515
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          1
+Addition result is wrong!  2735 != 55600
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          2
+Addition result is wrong! 62369 != 60066
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          3
+Addition result is wrong!  1537 != 59405
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          4
+Addition result is wrong! 59757 != 58600
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          5
+Addition result is wrong! 51629 != 19293
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          6
+Addition result is wrong! 65120 != 15980
+Overflow result is wrong! 1 != z
+
+Addition -- Testcase:          7
+Addition result is wrong! 32097 !=  1447
+Overflow result is wrong! 1 != z
+
+Subtraction -- Testcase:          8
+Subtraction result is wrong!  5500 != 13156
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:          9
+Subtraction result is wrong! 56788 != 15071
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         10
+Subtraction result is wrong!  6642 != 34796
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         11
+Subtraction result is wrong! 51483 != 56811
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         12
+Subtraction result is wrong!  3602 !=  5090
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         13
+Subtraction result is wrong! 56892 != 15547
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         14
+Subtraction result is wrong! 55221 != 45194
+Overflow result is wrong! 1 != z
+
+Subtraction -- Testcase:         15
+Subtraction result is wrong! 18730 != 43221
+Overflow result is wrong! 1 != z
+
+Your simulation grade is           0 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 206
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 867.184 ; gain = 8.402
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.lab3_source
+Compiling module xil_defaultlib.lab3_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab3_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is wrong!  3521 !=  3515
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          1
+Addition result is wrong!  2735 != 55600
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          2
+Addition result is wrong! 62369 != 60066
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          3
+Addition result is wrong!  1537 != 59405
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          4
+Addition result is wrong! 59757 != 58600
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          5
+Addition result is wrong! 51629 != 19293
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          6
+Addition result is wrong! 65120 != 15980
+Overflow result is wrong! 1 != z
+
+Addition -- Testcase:          7
+Addition result is wrong! 32097 !=  1447
+Overflow result is wrong! 1 != z
+
+Subtraction -- Testcase:          8
+Subtraction result is wrong!  5500 != 13156
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:          9
+Subtraction result is wrong! 56788 != 15071
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         10
+Subtraction result is wrong!  6642 != 34796
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         11
+Subtraction result is wrong! 51483 != 56811
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         12
+Subtraction result is wrong!  3602 !=  5090
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         13
+Subtraction result is wrong! 56892 != 15547
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         14
+Subtraction result is wrong! 55221 != 45194
+Overflow result is wrong! 1 != z
+
+Subtraction -- Testcase:         15
+Subtraction result is wrong! 18730 != 43221
+Overflow result is wrong! 1 != z
+
+Your simulation grade is           0 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 206
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 868.395 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.lab3_source
+Compiling module xil_defaultlib.lab3_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab3_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is wrong!  3521 !=  3515
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          1
+Addition result is wrong!  2735 != 55600
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          2
+Addition result is wrong! 62369 != 60066
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          3
+Addition result is wrong!  1537 != 59405
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          4
+Addition result is wrong! 59757 != 58600
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          5
+Addition result is wrong! 51629 != 19293
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          6
+Addition result is wrong! 65120 != 15980
+Overflow result is wrong! 1 != z
+
+Addition -- Testcase:          7
+Addition result is wrong! 32097 !=  1447
+Overflow result is wrong! 1 != z
+
+Subtraction -- Testcase:          8
+Subtraction result is wrong!  5500 != 13156
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:          9
+Subtraction result is wrong! 56788 != 15071
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         10
+Subtraction result is wrong!  6642 != 34796
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         11
+Subtraction result is wrong! 51483 != 56811
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         12
+Subtraction result is wrong!  3602 !=  5090
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         13
+Subtraction result is wrong! 56892 != 15547
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         14
+Subtraction result is wrong! 55221 != 45194
+Overflow result is wrong! 1 != z
+
+Subtraction -- Testcase:         15
+Subtraction result is wrong! 18730 != 43221
+Overflow result is wrong! 1 != z
+
+Your simulation grade is           0 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 206
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.lab3_source
+Compiling module xil_defaultlib.lab3_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab3_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is correct!  3521 ==  3521
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          1
+Addition result is correct!  2735 ==  2735
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          2
+Addition result is correct! 62369 == 62369
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          3
+Addition result is correct!  1537 ==  1537
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          4
+Addition result is correct! 59757 == 59757
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          5
+Addition result is correct! 51629 == 51629
+Overflow result is wrong! 0 != z
+
+Addition -- Testcase:          6
+Addition result is correct! 65120 == 65120
+Overflow result is wrong! 1 != z
+
+Addition -- Testcase:          7
+Addition result is correct! 32097 == 32097
+Overflow result is wrong! 1 != z
+
+Subtraction -- Testcase:          8
+Subtraction result is correct!  5500 ==  5500
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:          9
+Subtraction result is correct! 56788 == 56788
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         10
+Subtraction result is correct!  6642 ==  6642
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         11
+Subtraction result is correct! 51483 == 51483
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         12
+Subtraction result is correct!  3602 ==  3602
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         13
+Subtraction result is correct! 56892 == 56892
+Overflow result is wrong! 0 != z
+
+Subtraction -- Testcase:         14
+Subtraction result is correct! 55221 == 55221
+Overflow result is wrong! 1 != z
+
+Subtraction -- Testcase:         15
+Subtraction result is correct! 18730 == 18730
+Overflow result is wrong! 1 != z
+
+Your simulation grade is          28 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 206
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.lab3_source
+Compiling module xil_defaultlib.lab3_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab3_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is correct!  3521 ==  3521
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          1
+Addition result is correct!  2735 ==  2735
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          2
+Addition result is correct! 62369 == 62369
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          3
+Addition result is correct!  1537 ==  1537
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          4
+Addition result is correct! 59757 == 59757
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          5
+Addition result is correct! 51629 == 51629
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          6
+Addition result is correct! 65120 == 65120
+Overflow result is correct! 1 == 1
+
+Addition -- Testcase:          7
+Addition result is correct! 32097 == 32097
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:          8
+Subtraction result is correct!  5500 ==  5500
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:          9
+Subtraction result is correct! 56788 == 56788
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         10
+Subtraction result is correct!  6642 ==  6642
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         11
+Subtraction result is correct! 51483 == 51483
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         12
+Subtraction result is correct!  3602 ==  3602
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         13
+Subtraction result is correct! 56892 == 56892
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         14
+Subtraction result is correct! 55221 == 55221
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:         15
+Subtraction result is correct! 18730 == 18730
+Overflow result is correct! 1 == 1
+
+Your simulation grade is          44 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 206
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is correct!  3521 ==  3521
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          1
+Addition result is correct!  2735 ==  2735
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          2
+Addition result is correct! 62369 == 62369
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          3
+Addition result is correct!  1537 ==  1537
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          4
+Addition result is correct! 59757 == 59757
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          5
+Addition result is correct! 51629 == 51629
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          6
+Addition result is correct! 65120 == 65120
+Overflow result is correct! 1 == 1
+
+Addition -- Testcase:          7
+Addition result is correct! 32097 == 32097
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:          8
+Subtraction result is correct!  5500 ==  5500
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:          9
+Subtraction result is correct! 56788 == 56788
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         10
+Subtraction result is correct!  6642 ==  6642
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         11
+Subtraction result is correct! 51483 == 51483
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         12
+Subtraction result is correct!  3602 ==  3602
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         13
+Subtraction result is correct! 56892 == 56892
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         14
+Subtraction result is correct! 55221 == 55221
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:         15
+Subtraction result is correct! 18730 == 18730
+Overflow result is correct! 1 == 1
+
+Your simulation grade is          44 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 206
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.lab3_source
+Compiling module xil_defaultlib.lab3_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab3_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is correct!  3521 ==  3521
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          1
+Addition result is correct!  2735 ==  2735
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          2
+Addition result is correct! 62369 == 62369
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          3
+Addition result is correct!  1537 ==  1537
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          4
+Addition result is correct! 59757 == 59757
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          5
+Addition result is correct! 51629 == 51629
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          6
+Addition result is correct! 65120 == 65120
+Overflow result is correct! 1 == 1
+
+Addition -- Testcase:          7
+Addition result is correct! 32097 == 32097
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:          8
+Subtraction result is correct!  5500 ==  5500
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:          9
+Subtraction result is correct! 56788 == 56788
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         10
+Subtraction result is correct!  6642 ==  6642
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         11
+Subtraction result is correct! 51483 == 51483
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         12
+Subtraction result is correct!  3602 ==  3602
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         13
+Subtraction result is correct! 56892 == 56892
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         14
+Subtraction result is correct! 55221 == 55221
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:         15
+Subtraction result is correct! 18730 == 18730
+Overflow result is correct! 1 == 1
+
+Your simulation grade is          44 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 204
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 874.828 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sources_1/new/lab3_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.lab3_source
+Compiling module xil_defaultlib.lab3_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab3_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is correct!  3521 ==  3521
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          1
+Addition result is correct!  2735 ==  2735
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          2
+Addition result is correct! 62369 == 62369
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          3
+Addition result is correct!  1537 ==  1537
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          4
+Addition result is correct! 59757 == 59757
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          5
+Addition result is correct! 51629 == 51629
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          6
+Addition result is correct! 65120 == 65120
+Overflow result is correct! 1 == 1
+
+Addition -- Testcase:          7
+Addition result is correct! 32097 == 32097
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:          8
+Subtraction result is correct!  5500 ==  5500
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:          9
+Subtraction result is correct! 56788 == 56788
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         10
+Subtraction result is correct!  6642 ==  6642
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         11
+Subtraction result is correct! 51483 == 51483
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         12
+Subtraction result is correct!  3602 ==  3602
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         13
+Subtraction result is correct! 56892 == 56892
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         14
+Subtraction result is correct! 55221 == 55221
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:         15
+Subtraction result is correct! 18730 == 18730
+Overflow result is correct! 1 == 1
+
+Your simulation grade is          44 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 204
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab3_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab3_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9206329363cd4c459be6556296bd5aab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab3_sim_behav xil_defaultlib.lab3_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab3_sim_behav -key {Behavioral:sim_1:Functional:lab3_sim} -tclbatch {lab3_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source lab3_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Addition -- Testcase:          0
+Addition result is correct!  3521 ==  3521
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          1
+Addition result is correct!  2735 ==  2735
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          2
+Addition result is correct! 62369 == 62369
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          3
+Addition result is correct!  1537 ==  1537
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          4
+Addition result is correct! 59757 == 59757
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          5
+Addition result is correct! 51629 == 51629
+Overflow result is correct! 0 == 0
+
+Addition -- Testcase:          6
+Addition result is correct! 65120 == 65120
+Overflow result is correct! 1 == 1
+
+Addition -- Testcase:          7
+Addition result is correct! 32097 == 32097
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:          8
+Subtraction result is correct!  5500 ==  5500
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:          9
+Subtraction result is correct! 56788 == 56788
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         10
+Subtraction result is correct!  6642 ==  6642
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         11
+Subtraction result is correct! 51483 == 51483
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         12
+Subtraction result is correct!  3602 ==  3602
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         13
+Subtraction result is correct! 56892 == 56892
+Overflow result is correct! 0 == 0
+
+Subtraction -- Testcase:         14
+Subtraction result is correct! 55221 == 55221
+Overflow result is correct! 1 == 1
+
+Subtraction -- Testcase:         15
+Subtraction result is correct! 18730 == 18730
+Overflow result is correct! 1 == 1
+
+Your simulation grade is          44 out of          44!
+
+$finish called at time : 281 ns : File "C:/Users/goktu/Desktop/CS_303_LABS/lab_3/lab_3.srcs/sim_1/new/lab3_sim.v" Line 204
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab3_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 882.754 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 882.754 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  3 12:19:16 2021...
